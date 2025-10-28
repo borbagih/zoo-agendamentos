@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Painel de Aprovação - Zooflora</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/auth.js" defer></script>
+    <script src="js/form.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <img src="assets/logo.png" alt="Zooflora" class="logo">
+        <h1>Painel de Aprovação</h1>
+        <button id="logoutBtn">Sair</button>
+    </header>
+
+    <main>
+        <h2>Reservas Pendentes</h2>
+        <table id="reservasTable">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Sala</th>
+                    <th>Data</th>
+                    <th>Início</th>
+                    <th>Fim</th>
+                    <th>Observação</th>
+                    <th>Aprovar</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Linhas de reservas serão preenchidas pelo form.js -->
+            </tbody>
+        </table>
+    </main>
+
+</body>
+</html>
