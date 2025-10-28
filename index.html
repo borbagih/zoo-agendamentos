@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reserva de Salas - Zooflora</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/auth.js" defer></script>
+    <script src="js/form.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <img src="assets/logo.png" alt="Zooflora" class="logo">
+        <h1>Reserva de Salas</h1>
+        <button id="logoutBtn">Sair</button>
+    </header>
+
+    <main>
+        <form id="reservaForm">
+            <label>
+                Nome Gestor:
+                <input type="text" id="gestor" required />
+            </label>
+
+            <label>
+                Sala:
+                <select id="sala" required>
+                    <option value="" disabled selected>Selecione</option>
+                    <option>Sala 01</option>
+                    <option>Sala 02</option>
+                </select>
+            </label>
+
+            <label>
+                Data:
+                <input type="date" id="data" required />
+            </label>
+
+            <label>
+                Hora Início:
+                <input type="time" id="horaInicio" required />
+            </label>
+
+            <label>
+                Hora Fim:
+                <input type="time" id="horaFim" required />
+            </label>
+
+            <label>
+                Observações:
+                <textarea id="obs"></textarea>
+            </label>
+
+            <button type="submit">Enviar Reserva</button>
+        </form>
+
+        <a class="link" href="calendario.html">Ver Agenda</a>
+    </main>
+
+</body>
+</html>
